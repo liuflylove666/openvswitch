@@ -2023,7 +2023,7 @@ should_revalidate(const struct udpif *udpif, uint64_t packets,
         /* The flow is receiving more than ~5pps, so keep it. */
         return true;
     }
-    return false;
+    return true;
 }
 
 struct reval_context {
